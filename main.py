@@ -56,7 +56,7 @@ if file.exists(): #sprawdzenie czy archiwum istnieje
                 try:
                     with zf.open('VERSION.txt', 'r') as version_file, zipfile.ZipFile('temp.zip', 'w') as temp_zf: #otwarcie pliku VERSION.txt oraz utworzenie
                                                                                                                    #tymczasowego archiwum
-                        zf_copied = check_today_argument(zf, temp_zf)   #kopiowanie plików z archiwum pierwotnego do archiwum tymczasowego
+                        zf_copied = check_today_argument(zf, temp_zf)            #kopiowanie plików z archiwum pierwotnego do archiwum tymczasowego
                         
                         content = version_file.read() 
                         content = content.decode('utf-8')
